@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Valentine’s Day Clairrr 💕</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #f8cdda, #fbc2eb);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    h1, h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.5em;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,0.25);
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3.2em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 25px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    .button {
+      display: inline-block;
+      margin: 15px;
+      padding: 14px 26px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 30px;
+      background: #ff5fa2;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    .button:hover {
+      background: #ff3d8e;
+      transform: scale(1.05);
+    }
 
+    /* Floating Hearts */
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      color: #ff4d88;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      padding: 40px 20px;
+      background: rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Music (Replace link if you upload your own song) -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Happy Valentine’s Day, Clairrr 💕</h1>
+    <p>From your Saiii — always yours, always in love.</p>
+  </section>
+
+  <!-- Our Story -->
+  <section>
+    <h2>Our Story 💖</h2>
+    <div class="card">
+      <p>We started talking on <strong>September 7</strong>, and something special began.</p>
+      <p>On <strong>December 5</strong>, we made it official — and my life changed in the best way.</p>
+      <p>Even though we haven’t known each other long, it already feels like forever.</p>
+    </div>
+  </section>
+
+  <!-- Why I Love You -->
+  <section>
+    <h2>Why I Love You 🌸</h2>
+    <div class="card">
+      <p>• Your eyes — they calm me and make me fall all over again.</p>
+      <p>• How you go along with all my whims, even when I’m being silly.</p>
+      <p>• How you make me feel loved, chosen, and safe.</p>
+      <p><strong>I am completely satisfied with you and us.</strong></p>
+    </div>
+  </section>
+
+  <!-- Distance -->
+  <section>
+    <h2>Distance Doesn’t Matter 🌍</h2>
+    <div class="card">
+      <p>I won’t lie — I’m jealous of your classmates and neighbors who get to stay so close to you.</p>
+      <p>While I’m <strong>3200 miles away</strong>, my heart is always right next to yours.</p>
+      <p>You’re mine, I’m yours — and nothing will ever change that.</p>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section>
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+      <!-- Replace these image links with your own photos -->
+      <img src="https://via.placeholder.com/300x300.png?text=Us+1" alt="Memory 1">
+      <img src="https://via.placeholder.com/300x300.png?text=Us+2" alt="Memory 2">
+      <img src="https://via.placeholder.com/300x300.png?text=Us+3" alt="Memory 3">
+      <img src="https://via.placeholder.com/300x300.png?text=Us+4" alt="Memory 4">
+      <img src="https://via.placeholder.com/300x300.png?text=Us+5" alt="Memory 5">
+      <img src="https://via.placeholder.com/300x300.png?text=Us+6" alt="Memory 6">
+    </div>
+    <p style="margin-top:15px;">Still falling for you every single day 😍</p>
+  </section>
+
+  <!-- Surprise Buttons -->
+  <section>
+    <h2>Just for You 💌</h2>
+    <button class="button" onclick="alert('You’re the best thing that ever happened to me, Clairrr. I love you endlessly. — Saiii 💕')">
+      🎁 Click for a Surprise 💌
+    </button>
+    <button class="button" onclick="alert('If you’re missing me, remember I’m missing you even more. My heart is always with you. — Saiii 💖')">
+      💝 Open When You Miss Me 💭
+    </button>
+    <button class="button" onclick="alert('No matter where life takes us, I choose you every single day. You’re my heart, my home, my everything. 🫶 — Saiii')">
+      🌹 A Secret Just for You 🤫
+    </button>
+  </section>
+
+  <!-- Love Letter -->
+  <footer>
+    <h2>A Love Letter to Clairrr 💞</h2>
+    <p>My Clairrr,</p>
+    <p>I love you more than words can ever explain.</p>
+    <p>I am never leaving you — not today, not tomorrow, not ever.</p>
+    <p>I am all yours, just like how you are all mine.</p>
+    <p>No matter how far apart we are, I carry you with me in every thought, every heartbeat, every dream.</p>
+    <p><strong>Forever yours, Saiii 💕</strong></p>
+  </footer>
+
+  <!-- Floating Hearts Script -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "💖";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 500);
+  </script>
+
+</body>
+</html>
